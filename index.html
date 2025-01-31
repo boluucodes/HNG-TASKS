@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE CARD|BOLUWATIFE KEHINDE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="container">
+       <img src="/TASK 1/images/20220124_101214.jpg" alt="" data-testid="profilePicture">
+        </div>
+        <div class="text-container">
+            <h3 data-testid="fullName">Boluwatife Kehinde</h3>
+            <p data-testid="jobTitle">Web Developer</p>
+
+            <div class="intro-box">
+                <p data-testid="shortBio">I am a web developer passionate about breathing life into
+                    websites by utilizing the magic lines called code. I love building web projects with clean, aesthetic UI/UX and responsive design.
+                </p>
+            </div>
+
+            <div class="location" data-testid="currentLocation">
+                <h3>Ibadan,Nigeria.</h3>
+            </div>
+
+            <div class="email">
+                <a href="">sammiemarvie03@gmail.com</a>
+            </div>
+            <div class="nav-links" data-testid="social-links">
+                <a href="">twitter</a>
+                <a href="">Github</a>
+                <a href="">instagram</a>
+            </div>
+            <div class="time-box">
+                <p><span id="datetime"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+    </script>
+</body>
+</html>
