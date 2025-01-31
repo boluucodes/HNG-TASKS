@@ -100,7 +100,7 @@ body{
         /* padding: .5rem; */
     }
 }
-@media(max-width:786px) {
+@media and (max-width:786px) {
     .card{
         flex-direction: column;
     }
